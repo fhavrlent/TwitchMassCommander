@@ -47,6 +47,8 @@ const massCommand = async () => {
     client.say(channel, cmd);
     await sleep(parseInt(waitTime, 10));
   }
+
+  process.exit(1);
 };
 
 client.on('connected', () => massCommand());
